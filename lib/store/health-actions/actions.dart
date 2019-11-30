@@ -1,0 +1,3 @@
+class GetHealthActions {}
+
+class RemoveHealthActions {}
