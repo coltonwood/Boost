@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pha_flutter/screens/overview/components/greeting.dart';
 import 'package:pha_flutter/screens/overview/components/rewards-summary.dart';
-import 'package:pha_flutter/widgets/progress-bar.dart';
 
 class OverviewScreen extends StatefulWidget {
-  OverviewScreen({Key key, this.setTab});
+  OverviewScreen({Key key, this.setTab}) : super(key: key);
   final Function(int) setTab;
 
   @override
@@ -17,9 +16,9 @@ class _OverviewScreenState extends State<OverviewScreen>
 
   @override
   void initState() {
+    super.initState();
     _tabController = TabController(length: 2, initialIndex: 0, vsync: this);
     _tabController.addListener(_handleTabSelection);
-    super.initState();
   }
 
   _handleTabSelection() {
@@ -38,7 +37,6 @@ class _OverviewScreenState extends State<OverviewScreen>
               name: 'Colton',
             ),
             RewardsSummary(
-              setTab: widget.setTab,
               earnedAmount: 25,
               totalAmount: 100,
             ),
@@ -62,6 +60,39 @@ class _OverviewScreenState extends State<OverviewScreen>
               Icon(Icons.list),
               Icon(Icons.check),
             ][_tabController.index],
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
+            Text('hello world'),
           ],
         ),
       ),

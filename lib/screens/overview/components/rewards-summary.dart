@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:pha_flutter/models/bottom-nav.dart';
 import 'package:pha_flutter/widgets/progress-bar.dart';
+import 'package:provider/provider.dart';
 
 class RewardsSummary extends StatelessWidget {
   RewardsSummary({
     Key key,
-    this.setTab,
     this.earnedAmount,
     this.totalAmount,
   });
 
-  final Function(int) setTab;
   final int earnedAmount;
   final int totalAmount;
 
@@ -24,8 +24,8 @@ class RewardsSummary extends StatelessWidget {
         ),
         child: InkWell(
           onTap: () {
-            Future.delayed(Duration(milliseconds: 150), () {
-              setTab(1);
+            Future.delayed(Duration(milliseconds: 200), () {
+              Provider.of<BottomNav>(context, listen: false).setTab(1);
             });
           },
           borderRadius: BorderRadius.circular(15),

@@ -13,7 +13,7 @@ class ProgressBar extends StatelessWidget {
           color: Colors.green[100],
           borderRadius: BorderRadius.circular(10),
         ),
-        height: 20,
+        height: 10,
         alignment: Alignment.centerLeft,
         child: FractionallySizedBox(
           widthFactor: (percentage / 100) > 1 ? 1 : percentage / 100,
