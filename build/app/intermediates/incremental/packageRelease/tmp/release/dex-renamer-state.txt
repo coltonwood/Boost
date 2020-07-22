@@ -1,4 +1,0 @@
-#Sat Jan 25 16:26:54 CST 2020
-base.0=/Users/coltonwood/Dev/repos/pha_flutter/build/app/intermediates/transforms/r8/release/0/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
